@@ -41,10 +41,16 @@ $nachricht
     $header = "From: info@xn--entrmpler-profis-mzb.de\r\n";
     $header .= "Reply-To: $email\r\n";
 
-    if (mail($empfaenger, $betreff, $text, $header)) {
+    /*if (mail($empfaenger, $betreff, $text, $header)) {
         echo "Nachricht erfolgreich gesendet.";
     } else {
         echo "Fehler beim Senden.";
-    }
+    }*/
+    if (mail($empfaenger, $betreff, $text, $header)) {
+    header("Location: danke.html");
+    exit;
+} else {
+    echo "Fehler beim Senden. Bitte versuchen Sie es später erneut.";
+}
 }
 ?>
