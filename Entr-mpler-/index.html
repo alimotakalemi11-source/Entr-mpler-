@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrümpler Profis | Wohnungsauflösung & Entrümpelung</title>
+    <link href="style7.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="webLogo.png" type="image/png">
+    <meta name="description"
+    content="Die Entrümpler Profis – Ihr Experte für Wohnungsauflösungen, Haushaltsauflösungen und Entrümpelungen aller Art. Schnell, zuverlässig, besenrein und zum fairen Festpreis. Kostenlose Besichtigung anfragen.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18545974689"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18545974689');
+</script>
+</head>
+<body>
+    <header>
+            <button id="menu-btn">
+                ☰
+            </button>
+
+            <nav id="mobile-menu">
+                <a href="#leistungen">Leistungen</a>
+                <a href="#WarumWir">Warum wir</a>
+                <a href="#überUns">Über Uns</a>
+                <a href="#Ablauf">Ablauf</a>
+                <a href="#vorherNAchher">vorher-nachher</a>
+                <a href="#fragen">Fragen</a>
+                <a href="#Kontakt">Kontakt</a>
+            </nav>
+            <script>
+                const button = document.getElementById("menu-btn");
+                const menu = document.getElementById("mobile-menu");
+
+                button.addEventListener("click", () => {
+
+                    if(menu.style.display === "block"){
+
+                        menu.style.display = "none";
+
+                        button.style.borderBottomLeftRadius = "12px";
+                        button.style.borderBottomRightRadius = "12px";
+
+                    }else{
+
+                        menu.style.display = "block";
+
+                        button.style.borderBottomLeftRadius = "0px";
+                        button.style.borderBottomRightRadius = "0px";
+
+                        menu.style.borderTopLeftRadius = "0px";
+                        menu.style.borderTopRightRadius = "0px";
+
+                    }
+
+                });
+            </script>
+        <!--<div class="navContainer">
+            <nav>
+                <a href="#leistungen" class="navLinks">Leistungen</a>
+                <a href="#WarumWir">Warum wir</a>
+                <a href="#überUns">Über Uns</a>
+                <a href="#Ablauf">Ablauf</a>
+                <a href="#vorherNAchher">vorher-nachher</a>
+                <a href="#fragen">Fragen</a>
+                <a href="#Kontakt" class="yellowBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnIcon phoneIcon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                    Kontakt</a>
+            </nav>
+        </div>
+        <nav class="mainNav">
+            <img src="navImg.webp" alt="nav Img" class="nav_img">
+            <div>
+                <a href="">Leistungen</a>
+                <a href="">Warum wir</a>
+                <a href="">Über uns</a>
+                <a href="">Ablauf</a>
+                <a href="">Vorher-Nachher</a>
+                <a href="">Fragen</a>
+            </div>
+            <div>
+                <a href="" class="yellowBtn" id="nav_kont">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btnIcon phoneIcon">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    Kontakt
+                </a>
+            </div>
+        </nav>
+        <div class="Hero-Layout">
+            <div class="HeroLeft">
+                <div>
+                    <h1 id="hero-h1">Entrümpelung<br>Entsorgung und<br><strong class="markd">Reinigung in <span id="stadt">NRW.</span></strong></h1>
+                    <p class="Hero-slogan">Wir übernehmen Wohnungsauflösungen, Haushaltsauflösungen<br> und Entrümpelungen aller Art - schnell, zuverlässig und<br> besenrein.</p>
+                </div>
+                <script>
+                    fetch("https://ipapi.co/json/")
+                    .then(response => response.json())
+                    .then(data =>{
+                        const stadt = data.city;
+                        document.getElementById("stadt").textContent = data.city;
+                        if(stadt === "Frankfurt am Main"){
+                            document.getElementById("stadt").textContent = "Frankfurt";
+                        }
+                    })
+                    .catch(()=>{
+                        document.getElementById("stadt").textContent = "NRW";
+                    });
+                </script>
+                <div>
+                    <ul>
+                        <li class="Hero-List">
+                            <div class="SmallIconWrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Icons-Small">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                                </svg>
+                            </div>
+                            Kostenlose Besichtigung</li>
+                        <li class="Hero-List">
+                            <div class="SmallIconWrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Icons-Small">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                                </svg>
+                            </div>
+                            Festpreise ohne versteckte Kosten</li>
+                        <li class="Hero-List">
+                            <div class="SmallIconWrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Icons-Small">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                </svg>
+                            </div>
+                            Besenreine Übergabe</li>
+                    </ul>  
+                </div>
+                <div class="HeroBtns">
+                    <a href="#Kontakt" class="yellowBtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                    </svg>
+                    Kostenlose Besichtigung</a>
+                    <a href="tel:015901231393" class="whiteBtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnIcon phoneIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg>
+                    Jetzt Anrufen</a>
+                </div>
+            </div>
+        </div>-->
+        <nav class="mainNav">
+            <img src="navImg.webp" alt="nav Img" class="nav_img">
+            <div>
+                <a href="#leistungen">Leistungen</a>
+                <a href="#WarumWir">Warum wir</a>
+                <a href="#überUns">Über uns</a>
+                <a href="#Ablauf">Ablauf</a>
+                <a href="#vorherNAchher">Vorher-Nachher</a>
+                <a href="#fragen">Fragen</a>
+            </div>
+            <div>
+                <a href="#Kontakt" class="yellowBtn" id="nav_kont">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btnIcon phoneIcon">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    Kontakt
+                </a>
+            </div>
+        </nav>
+        <div class="Hero">
+            <div class="hero_img_box">
+                <img src="Hero.webp" alt="Bochum Wahrzeichen" class="Hero_img">
+                <div class="Hero_content HeroLeft">
+                    <h1 id="hero-h1">Entrümpelung<br>Entsorgung und<br><strong class="markd">Reinigung in <span id="stadt">NRW.</span></strong></h1>
+                    <p class="Hero-slogan">Wir übernehmen Wohnungsauflösungen, Haushaltsauflösungen<br> und Entrümpelungen aller Art - schnell, zuverlässig und<br> besenrein.</p>
+                    <div class="hero_service">
+                        <div class="hero_serv_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                            <strong class="Lesitung_">Schnell<br>vor Ort</strong>
+                        </div>
+                        <div class="hero_serv_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                            </svg>
+                            <strong class="Lesitung_">Zuverlässig<br>& diskret</strong>
+                        </div>
+                        <div class="hero_serv_card">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <strong class="Lesitung_">Faire<br>Festpreise</strong>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <a href="index.html#Kontakt" class="yellowBtn">
+                            Kostenlose Besichtigung anfragen <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                        <a href="index.html#leistungen" class="yellowBtn whiteBtn">
+                            Alle Leistungen ansehen<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <script>
+                    fetch("https://ipapi.co/json/")
+                    .then(response => response.json())
+                    .then(data =>{
+                        const stadt = data.city;
+                        document.getElementById("stadt").textContent = data.city;
+                        if(stadt === "Frankfurt am Main"){
+                            document.getElementById("stadt").textContent = "Frankfurt";
+                        }
+                    })
+                    .catch(()=>{
+                        document.getElementById("stadt").textContent = "NRW";
+                    });
+                </script>                    </div>
+            </div>
+        </div>     
+    </header>
+    <div class="videoBox">
+<iframe class="Video" width="560" height="500" src="https://app.heygen.com/embeds/4f03f9517da345a6a564c106bb6b964a" title="Check out a new AI Video I just made!" frameborder="0" allow="encrypted-media; fullscreen;" allowfullscreen></iframe>    </div>
+    <div class="ServiceLayoutForHero">
+        <div class="Hero-ServiceLayout">
+            <div class="HeroCards afterCard">
+                <div class="HeroCardIconWrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </div>
+                <div>
+                    <strong>Wohnungsauflösungen</strong>
+                    <p>Komplette Auflösungen von <br>Wohnungen - diskret und<br> professionell.</p>
+                </div>
+            </div>
+            <div class="HeroCards afterCard">
+                <div class="HeroCardIconWrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>
+                </div>
+                <div>
+                    <strong>Haushaltsauflösungen</strong>
+                    <p>Wir übernehmen Haushalts-<br>auflösungen bei Umzug,<br> Nachlass oder Haushaltswechsel.</p>
+                </div>
+            </div>
+            <div class="HeroCards afterCard">
+                <div class="HeroCardIconWrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                    </svg>
+                </div>
+                <div>
+                    <strong>Geschäfts- &<br>Betriebsauflösungen</strong>
+                    <p>Büros, Lagerhallen, Praxen und<br>Gewerbeobjekte - schnell und zuverlässig.</p>
+                </div>
+            </div>
+            <div class="HeroCards">
+                <div class="HeroCardIconWrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                    </svg>
+                </div>
+                <div>
+                    <strong>Entrümpelungen<br>aller Art</strong>
+                    <p>Dachböden, Keller, Garagen,<br>Scheunen und mehr -<br>wir schaffen Platz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="leistungen">
+            <div class="SectionHead">
+                <div>
+                    <p class="SectionName">UNSERE LEISTUNGEN</p>
+                    <h2 class="SectioneHeadline">Entrümpelungen <strong class="markd">aller Art</strong></h2>
+                </div>
+                <div>
+                    <p class="SectionSlogan">Wir übernehmen Entrümpelungen jeder Art - schnell, zuverlässig und besenrein. <br>Egal ob Wohnung, Haus, Keller oder Gewerbe.</p>
+                </div>
+            </div>
+            <div class="ServiceCardLayout">
+                <div class="big_serviceCArd">
+                    <div class="BigCard_Head">
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons BigCArd_IconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Unsere Leistungen<br>auf einen Blick</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="BigCArd_List cardList_after"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                            Wohnungsentrümpelung
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Haushalts- und Nachlassauflösungen
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Keller-, Dachboden- und Garagenräumungen
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Firmen- und Büroauflösungen
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Messie-Wohnungen
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Fachgerechte Entsorgung und Sperrmüllentsorgung
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Bauendreinigung und Feinreinigung
+                            </li>
+                            <li class="BigCArd_List cardList_after">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Gebäudereinigung und Grundreinigung
+                            </li>
+                            <li class="BigCArd_List">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                                Tatortreinigung
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#Kontakt" class="yellowBtn" id="BigCard_Icon" > <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btnIcon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        Jetzt kontaktieren</a>
+                    </div>
+                </div>
+                <div class="ServiceCard">
+                    <div class="ImgWrapper">
+                        <img src="wohnungsauflosung.webp" alt="Couch mit vielen Paketen im Raum" class="ServiceImg">
+                        <div class="ServiceCardsIconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="CardDescribtion">
+                        <strong>Wohnungsauflösungen</strong>
+                        <p>Komplette Wohnungsauflösungen<br> in Bochum und Umgebung.<br>Wir übernehmen Räumung,<br> Entsorgung und besenreine<br>Übergabe - diskret und<br>professionell.</p>
+                        <div class="CardDate">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                            <strong>Besenreine Übergabe</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="ServiceCard">
+                    <div class="ImgWrapper">
+                        <img src="Haushaltsauflosungen.webp" alt="viele Pakete in der Wohnung" class="ServiceImg">
+                        <div class="ServiceCardsIconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="CardDescribtion">
+                        <strong>Haushaltsauflösungen</strong>
+                        <p>Wir übernehmen Haushalts-<br>Auflösungen bei Umzug, Nachlass<br> oder Haushaltswechsel.<br>Zuverlässig, diskret und immer<br>zum Festpreis.</p>
+                        <div class="CardDate">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                            <strong>Festpreisgarantie</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="ServiceCard">
+                    <div class="ImgWrapper">
+                        <img src="Geschaftsundbetriebsauflosung.webp" alt="ein leeres office" class="ServiceImg">
+                        <div class="ServiceCardsIconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="CardDescribtion">
+                        <strong class="ServiceCardName">Geschäfts-&<br>Betriebsauflösung</strong>
+                        <p>Büros, Lagerhallen, Praxen und<br>Gewerbeobjekte räumen wir schnell<br> und professionell.<br>MinimalerBetriebsunterbruch,<br>maximale Effizienz.</p>
+                        <div class="CardDate">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                            <strong>Schnell & zuverlässig</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="ServiceCard">
+                    <div class="ImgWrapper">
+                        <img src="entrumpellungAlerArt.webp" alt="Ein verstaubter Schuppen" class="ServiceImg">
+                        <div class="ServiceCardsIconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="CardDescribtion">
+                        <strong >Entrümpelung<br>aller Art</strong>
+                        <p>Dachböden, Keller, Garagen,<br>Scheunen oder Außenbereiche-<br>wir entrümpeln gründlich<br>und fachgerecht.</p>
+                        <div class="CardDate">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                            </svg>
+                            <strong>Fachgerechte Entsorgung</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Service_Plank">
+                <div class="ServicePlanlk_Card PlankCard_after">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons BigCArd_IconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div classe="serv_points">
+                        <h4>Zuverlässig & direkt</h4>
+                        <p>Ihre Zufriedenheit und Diskretion<br>stehen bei uns an erster Stelle.</p>
+                    </div>
+                </div>
+                <div class="ServicePlanlk_Card  PlankCard_after">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons BigCArd_IconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div classe="serv_points">
+                        <h4>Schnell & flexibel</h4>
+                        <p>Wir sind kurzfristig für Sie da -<br>auch am Wochenende.</p>
+                    </div>
+                </div>
+                <div class="ServicePlanlk_Card PlankCard_after">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons BigCArd_IconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div classe="serv_points">
+                        <h4>Besenrein Übergeben</h4>
+                        <p>Wir hinterlassen alle Räume<br>sauber und bezugsfertig.</p>
+                    </div>
+                </div>
+                <div class="ServicePlanlk_Card ">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons BigCArd_IconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div classe="serv_points">
+                        <h4>Fachgerechte Entsorgung</h4>
+                        <p>Umweltgerecht entsorgt<br>und nachhaltig gehandelt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="WarumWir">
+            <div class="SectionHead">
+                <div>
+                    <p class="SectionName">WARUM ENTRÜMPLER-PROFIS</p>
+                    <h2 class="SectioneHeadline">Warum <strong class="markd">Entrümpler Profis</strong> ?</h2>
+                </div>
+                <div>
+                    <p class="SectionSlogan">Mit über 10 Jahren Erfahrung stehen wir für professionelle Entrümpelung in ganz NRW.<br>Unsere Kunden schätzen unsere schnelle, diskrete und fachgerechte Arbeitsweise.</p>
+                </div>
+            </div>
+            <div class="whyWeLAyout">
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Übr 10 Jahre Erfahrung</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Langjährige Expertise für<br>zufriedene Kunden in ganz NRW.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Kostenlose Besichtigung</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Wir kommen kostenlos vorbei und erstellen Ihnen ein unverbindliches Angebot.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Transparente Festpreise</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Faire und transparente Preise -<br>ohne versteckte Kosten.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Zuverlässiges Team</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Unser Team arbeitet diskret,<br>professionell und mit<br>höchster Sorgfalt.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Schnelle Terminvergabe</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Kurzfristige Termine und<br>flexible Einsatzzeiten.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Einsatz in ganz NRW</h4>
+                    </div>
+                    <div class="whyWeText">                        
+                        <p class="whywe_text">Wir sind in ganz NRW für Sie<br>im Einsatz - schnell und<br>unkompliziert.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Besenreine Übergabe</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Wir hinterlassen alle Räume<br>sauber, ordentlich und<br>bezugsfertig.</p>
+                    </div>
+                </div>
+                <div class="WhyWeOptio">
+                    <div>
+                        <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="whywe_CardTitle">Zufriedenheitsgarantie</h4>
+                    </div>
+                    <div class="whyWeText">
+                        <p class="whywe_text">Ihre Zufriedenheit steht bei uns<br>an erster Stelle - darauf können<br>Sie sich verlassen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="WhyWe_plank">
+                <div class="plank_leftSide">
+                    <div>
+                        <div class="BigCArd_IconWrapper ablaufWrapperIcons AboutUSIconWrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="plankright_txt">
+                        <h3>Kostenlose Beratung - schnell & unverbindlich</h3>
+                        <p>Wir sind für Sie da - persönlich, diskret und mit einem offenen Ohr für Anliegen.</p>
+                    </div>
+                </div>
+                <div class="plank_reightSide">
+                    <h3>Kostenlose Besichtigung anfragen</h3>
+                    <p>Jetzt unverbindlich anfragen und Angebot sichern!</p>
+                </div>
+            </div>
+        </div>
+        <div id="überUns">
+            <div class="AboutUsLayout">
+                <div>
+                    <div class="SectionSideHead">
+                        <div>
+                            <p class="SectionName">ÜBER UNS</p>
+                            <h2 class="SectioneSideHeadline">Hinter jedem Auftrag<br>steht ein <strong class="markd">Mensch.</strong></h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="SectionSlogan">Entrümpelung bedeutet oft mehr als das Räumen<br>von Gegenständen. Sie ist mit Veränderungen<br>verbunden - manchmal eine Neuanfang, manchmal<br>ein Abschied.</p>
+                        <p class="SectionSlogan">Wir begegnen jeder Situation mit Respekt, Diskretion<br>und einem offenen Ohr. Unser eingespieltes Team<br>arbeitet zuverlässig, sorgfältig und organisiert -<br> von der Besichtigung  bis zur besenreinen Übergabe.</p>
+                    </div>
+                    <div>
+                        <a href="#Kontakt" class="yellowBtn" id="btnMG">Jetzt unverbindlich anfragen &#8594</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="teamimg">
+                        <img src="team.webp" class="team" alt="Entrümpler Team">
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Ablauf">
+            <div class="SectionHead">
+                <div>
+                    <p class="SectionName">ABLAUF</p>
+                    <h2 class="SectioneHeadline">In guten Händen.<br>von <strong class="markd">Anfang an.</strong></h2>
+                </div>
+                <div>
+                    <p class="SectionSlogan">Ein strukturierter Ablauf sorgt dafür, dass Sie jederzeit den Überblick behalten<br>und wir gemeinsam das Beste für Ihre Immobilie erreichen.</p>
+                </div>
+            </div>
+            <div class="ablaufLayout">
+                <div class="AblaufCards">
+                    <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                    </div>
+                    <div class="NumberWrapper">
+                        <strong class="number">1</strong>
+                    </div>
+                    <div>
+                        <strong>KONTAKT</strong>
+                        <p>Sie nehmen Kontakt mit uns auf -<br>wir hören zu und klären<br>die ersten Fragen.</p>
+                    </div>
+                </div>
+                <div class="AblaufCards">
+                    <div  class="AboutUSIconWrapper ablaufWrapperIcons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                    <div class="NumberWrapper">
+                        <strong class="number">2</strong>
+                    </div>
+                    <div>
+                        <strong>BESICHTIGUNG & ANGEBOT</strong>
+                        <p>Wir besichtigen Ihre Räumlichkeiten<br>und erstellen ein transparentes,<br>unverbindliches Festpreisangebot.</p>
+                    </div>
+                </div>
+                <div class="AblaufCards">
+                    <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                        </svg>
+                    </div>
+                    <div class="NumberWrapper">
+                        <strong class="number">3</strong>
+                    </div>
+                    <div>
+                        <strong>ENTRÜMPELUNG</strong>
+                        <p>Unser Team führt die Entrümpelung<br>schnell, zuverlässig und sorgfältig<br>durch - inklusive Abtransport.</p>
+                    </div>
+                </div>
+                <div class="AblaufCards">
+                    <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
+                        </svg>
+                    </div>
+                    <div class="NumberWrapper">
+                        <strong class="number">4</strong>
+                    </div>
+                    <div>
+                        <strong>BESENREINE ÜBERGABE</strong>
+                        <p>Wir hinterlassen die Räume sauber<br>und ordentlich - besenrein und <br>sofort nutzbar.</p>
+                    </div>
+                </div>
+                <div class="AblaufCards">
+                    <div class="AboutUSIconWrapper ablaufWrapperIcons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                        </svg>
+                    </div>
+                    <div class="NumberWrapper">
+                        <strong class="number">5</strong>
+                    </div>
+                    <div>
+                        <strong>ABSCHLUSS</strong>
+                        <p>Wir begleiten Sie bis zum<br>erfolgreichen Abschluss <br>-sicher und sorgenfrei.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="vorherNAchher">
+            <div class="SectionHead">
+                <div>
+                    <p class="SectionName">VORHER & NACHHER</p>
+                    <h2 class="SectioneHeadline">Echte Projekte. Echte Ergebnisse.</h2>
+                </div>
+                <div>
+                    <p class="SectionSlogan">Wir zeigen Ihnen echte Vorher-Nachher-Beispiele aus unserer täglichen Arbeit.<br>Jede Entrümpelung ist anders - das Ergebnis ist immer dasselbe: sauber, ordentlich, besenrein.</p>
+                </div>
+            </div>
+            <div class="slider">
+                <button class="nav prev">&#10094;</button>
+                <div class="slides">
+                    <div class="slide active">
+                        <div class="comparison">
+                            <div class="image before">
+                                <span>VORHER</span>
+                                <img src="vorher1.jpeg" alt="">
+                            </div>
+                            <div class="devider">
+                                <div class="circle">➜</div>
+                            </div>
+                            <div class="image after">
+                                <span>NACHHER</span>
+                                <img src="nachher1.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="comparison">
+                            <div class="image before">
+                                <span>VORHER</span>
+                                <img src="vorher2.jpeg" alt="">
+                            </div>
+                            <div class="devider">
+                                <div class="circle">➜</div>
+                            </div>
+                            <div class="image after">
+                                <span>NACHHER</span>
+                                <img src="nachher2.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="comparison">
+                            <div class="image before">
+                                <span>VORHER</span>
+                                <img src="vorher3.jpeg" alt="">
+                            </div>
+                            <div class="devider">
+                                <div class="circle">➜</div>
+                            </div>
+                            <div class="image after">
+                                <span>NACHHER</span>
+                                <img src="nachher3.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="comparison">
+                            <div class="image before">
+                                <span>VORHER</span>
+                                <img src="vorher4.jpeg" alt="">
+                            </div>
+                            <div class="devider">
+                                <div class="circle">➜</div>
+                            </div>
+                            <div class="image after">
+                                <span>NACHHER</span>
+                                <img src="nachher4.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav next">&#10095;</button>
+            </div>
+            <div class="dots"></div>
+        </div>
+        <script src="script.js"></script>
+        <div id="fragen">
+            <div class="SectionHead">
+                <div>
+                    <p class="SectionName">HÄUFIGE FRAGEN</p>
+                    <h2 class="SectioneHeadline">Fragen? Wir haben die Antworten.</h2>
+                </div>
+                <div>
+                    <p class="SectionSlogan">Die wichtigsten Fragen rund um unsere Entrümpelungsdienste.</p>
+                </div>
+            </div>
+            <div class="faq_Layout">
+                <div class="faq_Card">
+                    <div class="faq_closedTag">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="qestion">Wie werden die Kosten für die Entrümpelung berechnet?</h4>
+                        </div>
+                        <div>
+                            <div class="plus_faq">
+                                <stroke class="question_iconPlus">+</stroke>
+                                <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small-Icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anwnser">
+                        <div>
+                            <p>Nach einer kostenlosen Besichtigung erhalten Sie ein transparentes Festpreisangebot. So wissen Sie von Anfang an genau, welche Kosten auf Sie zukommen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_Card">
+                    <div class="faq_closedTag">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="qestion">Wie schnell bekommen wir einen Termin?</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <stroke class="question_iconPlus">+</stroke>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anwnser">
+                        <div>
+                            <p>In vielen Fällen können wir bereits innerhalb weniger Tage einen Termin anbieten. Kontaktieren Sie uns einfach für eine schnelle Terminabstimmung.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_Card">
+                    <div class="faq_closedTag">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="qestion">Was passiert mit verwertbaren Gegenständen?</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <stroke class="question_iconPlus">+</stroke>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anwnser">
+                        <div>
+                            <p>Verwertbare Möbel und Gegenstände werden sorgfältig aussortiert und nach Absprache berücksichtigt. Nichts wird ohne Rücksprache entsorgt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_Card">
+                    <div class="faq_closedTag">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 2.994v2.25m10.5-2.25v2.25m-14.252 13.5V7.491a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v11.251m-18 0a2.25 2.25 0 0 0 2.25 2.25h13.5a2.25 2.25 0 0 0 2.25-2.25m-18 0v-7.5a2.25 2.25 0 0 1 2.25-2.25h13.5a2.25 2.25 0 0 1 2.25 2.25v7.5m-6.75-6h2.25m-9 2.25h4.5m.002-2.25h.005v.006H12v-.006Zm-.001 4.5h.006v.006h-.006v-.005Zm-2.25.001h.005v.006H9.75v-.006Zm-2.25 0h.005v.005h-.006v-.005Zm6.75-2.247h.005v.005h-.005v-.005Zm0 2.247h.006v.006h-.006v-.006Zm2.25-2.248h.006V15H16.5v-.005Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="qestion">Arbeiten Sie auch am Wochenende oder an Feiertagen?</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <stroke class="question_iconPlus">+</stroke>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anwnser">
+                        <div>
+                            <p>Ja. Auf Wunsch führen wir Entrümpelungen auch an Wochenenden durch, damit sich der Termin optimal in Ihren Alltag einfügt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_Card">
+                    <div class="faq_closedTag">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="qestion">Muss ich bei der Entrümpelung persönlich anwesend sein?</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <stroke class="question_iconPlus">+</stroke>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anwnser">
+                        <div>
+                            <p>Nein. Nach der Besichtigung können wir die Entrümpelung auch ohne Ihre Anwesenheit durchführen. Die besenreine Übergabe erfolgt wie vereinbart.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_Card">
+                    <div class="faq_closedTag">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="qestion">Wie kurzfristig sind Termine möglich?</h4>
+                        </div>
+                        <div>
+                            <div class=" plus_faq">
+                                <stroke class="question_iconPlus">+</stroke>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anwnser">
+                        <div>
+                            <p>Kurzfristige Termine sind häufig möglich. Rufen Sie uns einfach an – wir prüfen sofort die nächstmögliche Verfügbarkeit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const cards = document.querySelectorAll(".faq_Card");
+
+            cards.forEach(card => {
+
+                const awnser = card.querySelector(".anwnser");
+                const icon = card.querySelector(".question_iconPlus");
+
+                card.addEventListener("click", (e) => {
+                    e.stopPropagation();
+
+                    awnser.classList.toggle("open");
+
+                    if (awnser.classList.contains("open")) {
+                        card.style.zIndex = "100";
+                        card.classList.add("faq_openTag");
+                        icon.textContent = "−";
+                    } else {
+                        card.style.zIndex = "1";
+                        card.classList.remove("faq_openTag");
+                        icon.textContent = "+";
+                    }
+
+                    document.addEventListener("click", (e) => {
+                    if (!card.contains(e.target)) {
+                        awnser.classList.remove("open");
+                        card.classList.remove("faq_openTag");
+                        card.style.zIndex = "1";
+                    }
+                });
+                });
+
+            });
+        </script>
+        <div id="Kontakt">
+            <div class="Kontakt_Layout">
+                <div>
+                    <div>
+                        <div class="SectionSideHead">
+                            <div>
+                                <p class="SectionName">KONTAKT</p>
+                                <h2 class="SectioneSideHeadline">Kostenlose<br>Besichtigung anfragen</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Sie planen eine Entrümpelung oder Haushaltsauflösung?<br>Schreiben Sie uns oder rufen Sie direkt an.<br>Wir melden uns <strong>schnellstmöglich</strong> bei Ihnen zurück.</p>
+                        </div>
+                    </div>
+                    <div class="companyData_Layout">
+                        <div class="kontakt_companyData">
+                            <div>
+                                <div class="faq_Wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="medium-Icons">
+                                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="companyData">
+                                <strong>Telefon</strong>
+                                <strong class="company_Information">015901231393</strong>
+                                <p>Mo.-Fr.: 08:00 - 18:00 Uhr</p>
+                            </div>
+                        </div>
+                        <div class="kontakt_companyData">
+                            <div>
+                                <div class="faq_Wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="medium-Icons">
+                                    <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                    <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="companyData">
+                                <strong>E-Mail</strong>
+                                <strong class="company_Information">info@entrümpler-profis.de</strong>
+                                <p>Wir antworten innerhalb kurzer Zeit.</p>
+                            </div>
+                        </div>
+                        <div class="kontakt_companyData">
+                            <div>
+                                <div class="faq_Wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="medium-Icons">
+                                    <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="companyData">
+                                <strong>Unser Einsatzgebiet</strong>
+                                <strong class="company_Information">Wir sind in ganz NRW für Sie im Einsatz</strong>
+                                <p>Zuverlässig, schnell & professionell.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="kontakt_pro">
+                        <div>
+                            <div class="faq_Wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="medium-Icons">
+                                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div >
+                            <div>
+                                <h5>Ihre Vorteile bei uns</h5>
+                            </div>
+                            <div class="pro_arg">
+                                <div class="proarg_card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <p>Kostenlose Besichtigung</p>
+                                </div>
+                                <div class="proarg_card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <p>Kurzfristige Termine</p>
+                                </div>
+                                <div class="proarg_card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <p>Transparente Festpreise</p>
+                                </div>
+                                <div class="proarg_card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="small-Icon">
+                                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <p>Besenreine Übergabe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+                <form class="Kontakt_form" action="kontaktsend.php" method="POST">
+                    <div class="input_layiouts">
+                        <div>
+                            <strong class="input_name">Name*</strong>
+                            <input type="text" name="name" placeholder="Vor- und Nachname" required>
+                        </div>
+                        <div>
+                            <strong class="input_name">Telefon*</strong>
+                            <input type="text" name="number" placeholder="Telefonnummer" required>
+                        </div>
+                        <div>
+                            <strong class="input_name">E-Mail*</strong>
+                            <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+                        </div>
+                        <div>
+                            <strong class="input_name">Straße & Hausnummer*</strong>
+                            <input type="text" name="strasse" placeholder="z.B. Musterstraße 1" required>
+                        </div>
+                        <div>
+                            <strong class="input_name">PLZ & Ort*</strong>
+                            <input type="text" name="location" placeholder="z.B. 44801 Bochum" required>
+                        </div>
+                        <div>
+                            <strong class="input_name">Art der Entrümpelung*</strong>
+                            <select  name="art">
+                                <option>Bitte auswählen</option>
+                                <option>Entrümpelung</option>
+                                <option>Haushaltsauflösung</option>
+                                <option>Wohnungsauflösung</option>
+                                <option>Kellerentrümpelung</option>
+                                <option>Dachbodenentrümpelung</option>
+                                <option>Garagenentrümpelung</option>
+                                <option>Büro- / Gewerbeauflösung</option>
+                                <option>Messie-Wohnung räumen</option>
+                                <option>Nachlassauflösung</option>
+                                <option>Sperrmüllentsorgung</option>
+                                <option>Möbelentsorgung</option>
+                                <option>Renovierungs- / Baustellenräumung</option>
+                                <option>Sonstiges</option>
+                            </select>
+                        </div>
+                        <div>
+                            <strong class="input_name">Objektgröße (ca.)*</strong>
+                            <select name="groesse">
+                                <option>Bitte auswählen</option>
+                                <option>Bis 30 m²</option>
+                                <option>30–60 m²</option>
+                                <option>60–100 m²</option>
+                                <option>100–150 m²</option>
+                                <option>150–200 m²</option>
+                                <option>Über 200 m²</option>
+                            </select>
+                        </div>
+                        <div>
+                            <strong class="input_name">Stockwerk</strong>
+                            <select  name="stockwerk">
+                                <option>Bitte auswählen</option>
+                                <option>Erdgeschoss</option>
+                                <option>1. Etage</option>
+                                <option>2. Etage</option>
+                                <option>3. Etage</option>
+                                <option>4. Etage</option>
+                                <option>5. Etage oder höher</option>
+                            </select>
+                        </div>
+                        <div>
+                            <strong  class="input_name">Wunschtermin</strong>
+                            <input type="date" name="TT.MM.JJJJ">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <textarea name="nachricht" placeholder="Ihre Nachricht" required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <!--<form action="kontakt.php" method="post"></form>-->
+                            <div class="g-recaptcha" data-sitekey="6LfpeDYtAAAAAE41zBElD2SgYz8aKfpzIvoBDwaC"></div>
+                            <button type="submit" class="send_btn">
+                            Senden</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="footer_layout">
+            <div>
+                <div>
+                    <h4>Entrümpelung Bochum</h4>
+                </div>
+                <div>
+                    <p>Ihr Partner für Entrümpelungen,<br>Haushaltsauflösungen und<br>Wohnungsauflösungen.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Leistungen</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li>Wohnungsauflösung</li>
+                        <li>Haushaltsauflösung</li>
+                        <li>Betriebsauflösung</li>
+                        <li>Kellerentrümpelung</li>
+                        <li>Dachbodenentrümpelung</li>
+                        <li>Nachlassauflösung</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Unternehmen</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="#überUns">ÜberUns</a>
+                    <a href="#Ablauf">Ablauf</a>
+                    <a href="#fragen">FAQ</a>
+                    <a href="#Kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Einsatzgebiet</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="bochum.html" target="_blank">Bochum</a>
+                    <a href="herne.html" target="_blank">Herne</a>
+                    <a href="witten.html" target="_blank">Witten</a>
+                    <a href="dortmund.html" target="_blank">Dortmund</a>
+                    <a href="hattingen.html" target="_blank">Hattingen</a>
+                    <a href="umgebung.html" target="_blank">und Umgebung</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Rechtliches</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="impressum.html" target="_blank">Impressum</a>
+                    <a href="datenschutz.html" target="_blank">Datenschutz</a>
+                    <img src="miraiweis.png" alt="mirai logo" id="mirai">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Die Entrümpler-Profis Bochum - Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="overlay">
+            <div class="mirai-Lay display">
+                <div class="cardHead">
+                    <img src="mirai.png" alt="mirai logo" class="miraiTwo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons closeIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="miraiP">Mirai ist eine Softwareentwicklungsfirma für moderne Webseiten und Onlineshops. Wir entwickeln<br>individuelle digitale Lösungen, die Unternehmen dabei helfen, online sichtbar zu werden, Kunden zu<br>gewinnen und nachhaltig zu wachsen. Dabei verbinden wir ansprechendes Design mit leistungsstarker<br>Technologie.</p>
+                </div>
+                <div class="miraiCard-Layout">
+                    <div class="mirai-mobile">
+                         <div>
+                            <h2>Über Mirai</h2>
+                            <p>Wir sind eine Softwareentwicklungsfirma<br>aus Deutschland. Wir entwickeln moderne<br> Webseiten, Onlineshops und digitale<br>Lösungen, die begeistern.</p>
+                        </div>
+                        <div>
+                            <h2>bei fragen</h2>
+                            <p>Telefon: 0171 6105872</p>
+                            <p>E-Mail: mirai-digital@gmail.com</p>
+                            <p>Webseite: <strong>Bald verfügbar</strong></p>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Leistungen</h3>
+                            <p>Webdesign, Entwicklung,<br>SEO, Branding &<br>Wartung</p>
+                        </div>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Kontakt</h3>
+                            <p>mirai-digital@gmail.com</p>
+                            <p>0171 6105872</p>
+                        </div>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Webseite</h3>
+                            <strong>Bald verfügber</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mirai = document.getElementById("mirai");
+        const layout = document.querySelector(".mirai-Lay");
+        const overlay = document.querySelector(".overlay");
+        const close = document.querySelector(".closeIcon");
+
+        mirai.addEventListener("click", ()=>{
+            layout.classList.remove("display");
+            overlay.classList.add("active");
+        });
+
+        close.addEventListener("click",()=>{
+            overlay.classList.remove("active");
+            layout.classList.add("display");
+        })
+
+         function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LfpeDYtAAAAAE41zBElD2SgYz8aKfpzIvoBDwaC', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+
+      function enableBtn(){
+        document.getElementById("sendDateBtn").disabled = false;
+      } 
+    </script>
+</body>
+</html>

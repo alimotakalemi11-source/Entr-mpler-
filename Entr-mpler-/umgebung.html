@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrümpler Profis | in Herne</title>
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="webLogo.png" type="image/png">
+    <meta name="description"
+    content="Die Entrümpler Profis – Ihr Experte für Wohnungsauflösungen, Haushaltsauflösungen und Entrümpelungen aller Art. Schnell, zuverlässig, besenrein und zum fairen Festpreis. Kostenlose Besichtigung anfragen.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth    ;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+img{
+    width:100%;
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 100px;
+}
+.nav_img{
+    width: 100%;
+    max-width: 10%;
+    height: auto;
+}
+nav a{
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+h1, nav a, h2 {
+    color: #081A2E;
+}
+.yellowBtn {
+    text-decoration: none;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #F5B400;
+    padding: 15px 20px;
+    color: #081A2E;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.phoneIcon {
+    fill: #081A2E;
+}
+.btnIcon {
+    width: 30px;
+    height: 30px;
+}
+.Hero_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.65) 30%,
+        rgba(0, 0, 0, 0.25) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+.hero_img_box{
+    width: 100%;
+    height: 600px;
+    overflow: hidden; 
+    position: relative;  
+}
+.Hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.Hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.75) 10%,
+        rgba(0, 0, 0, 0.40) 40%,
+        rgba(0, 0, 0, 0.10) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    z-index: 1;
+}
+#hero-h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    color: #fff;
+}
+.Hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    z-index: 2;
+}
+.Hero_content p{
+    color: #fff;
+}
+.Yellow_icons{
+    stroke: #F5B400;
+}
+.Hero_icons{
+    width: 45px;
+    height: 45px;
+}
+.hero_service{
+    display: flex;
+    gap: 50px;
+}
+.hero_serv_card{
+    display: flex;
+    gap: 15px;
+}
+p, strong,h1,h2{
+    margin: 0%;
+}
+.small_icon{
+    width: 25px;
+    height: 25px;
+}
+.main_h{
+    font-weight: 700;
+    font-size: 50px;
+}
+.section{
+    padding: 0px 100px;
+    margin-top: 100px;
+}
+.section_slogan{
+    margin-top: 10px;
+}
+.markd {
+    color: #F5B400;
+}
+.Lesitung_{
+    color: #fff;
+}
+.whiteBtn{
+    background-color: #081A2E;
+    color: #fff;
+}
+.nrw_icon{
+    width: 30px;
+    height: 30px;
+    stroke: #081A2E;
+}
+.nrw_icon_wrp{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #F5B400;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nrw_card_lay{
+    background-color: #FFFCF2;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border: #F5B400 solid 1px;
+}
+.nrw_card_lay p{
+    font-size: 13px;
+}
+.nrw_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40%;
+    gap: 25px;
+}
+.nrwlay{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.nrw_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    overflow: hidden;
+}
+.nrw_img_box{
+    width: 67%;
+    overflow: hidden;
+    padding-right: 50px;
+    justify-self: center;
+}
+.left_grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left:100px ;
+}
+#nrw{
+    padding: 0%;
+}
+.nrw_section_icon{
+    width: 30px;
+    height: 30px;
+    stroke: #081A2E;
+}
+.nrw_wrp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5B400;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.section_lay{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFCF2;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border-radius: 12px;
+    border: #F5B400 1px solid;
+    padding: 25px 50px;
+}
+.nrw_points{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.points{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+.points p{
+    font-size: 13px;
+}
+.nrw_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.small_icon{
+    stroke: #081A2E;
+    width: 25px;
+    height: 25px;
+}
+.section_h{
+    font-size: 30px;
+}
+.after{
+    position: relative;
+}
+.after::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #F5B400;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+}
+.after::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #F5B400;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.2;
+}
+
+footer{
+    background-color:#0F1A26;
+    margin-top: 100px;
+}
+.footer_layout{
+    /*width: fit-content;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    padding:50px;
+    /*border-radius: 20px;*/
+}
+.footer_layout p,.footer_layout li,.footer_layout a,.copyright p{
+    color:#D6DCE5;
+    font-weight: 400;
+    line-height: 40px;
+}
+.footer_layout h4{
+    color:#F5F7FA;
+    font-size:15px;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.footer_links a{
+    text-decoration:none;
+}
+.copyright{
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.copyright::after{
+    content: "";
+    position: absolute;
+    background:#343F4B;
+    width:97%;
+    height: 1px;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mirai{
+    width:92px;
+    margin-top: 10px;
+}
+#mirai:hover,.closeIcon:hover{
+    cursor: pointer;
+}
+.mirai-Lay{
+    /*
+    z-index: 2;
+    background-color:#fff; 
+    position: fixed;
+    padding: 50px;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border-radius: 20px;*/
+    width: 900px;
+    max-width: 90%;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 50px;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.25);
+
+    position: relative;
+}
+.mirai-Lay p{
+    color: #081A2E;
+    line-height: 22px;
+    font-weight: 600;
+}
+.miraiTwo{
+    width:300px;
+}
+.display,.mirai-mobile{
+    display: none;
+}
+.mirai-Card{
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    width: 100%;
+    max-width: 230px;
+    padding:20px;
+    border-radius: 10px;
+}
+.medium-Icons{
+    width: 40px;
+    height: 40px;
+}
+.miraiCard-Layout{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999; 
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.cardHead{
+    display: flex;
+    justify-content: space-between;
+}
+nav a:hover{
+    transform:translateY(-3px);
+}
+footer a{
+    transition: all 0.3s ease;
+}
+footer a:hover{
+    transform: translateX(-3px);
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+ul {
+    padding: 0%;
+}
+#menu-btn{
+    display: none;
+    width:50px;
+    height:50px;
+    border:none;
+    border-top-left-radius:12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background:#F4B400;
+    font-size:22px;
+    cursor:pointer;
+    position: absolute;
+    left: 20px;
+    top:20px;
+    z-index: 98;
+    margin-bottom: 20px;
+}
+#mobile-menu{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:20px;
+    width:250px;
+    background:white;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    z-index: 99;
+    padding: 0%;
+}
+@media(max-width: 600px){
+    .main_h{
+        font-size: 25px;   
+    }
+    .Hero_content{
+        left: 0%;
+    }
+    #hero-h1{
+        font-size: 30px;
+    }
+    .yellowBtn {
+        font-size: 13px;
+    }
+    .section,.why_we_lay,.districts_lay,.reques{
+        padding: 0px 20px;
+    }
+    #location_icon,#arrow_service,.big-Icons,.HeroCardIconWrapper,.Hero_img,.mainNav{
+        display: none;
+    }.Hero{
+    background-image:url("umgebung.webp");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 50px;
+    position: relative;
+    }
+    
+    #menu-btn {
+        display: block;
+    }
+    #mobile-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0B2345;
+    }
+    .Hero_icons {
+    width: 30px;
+    height: 30px;
+}
+.Lesitung_{
+    font-size: 14px;
+}
+.service_expl p{
+    font-size: 13px;
+}
+.hero_service {
+    display: none;
+    gap: 40px;
+}
+.big_txt{
+        font-size: 14px;
+    }
+    .Hero_content{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.Hero_content p{
+    text-align: center;
+}
+.btns_hero{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.nrwlay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_grid{
+    padding-left:20px ;
+    padding-right:20px ;
+}
+/*.nrw_card_lay p{
+    display: none;
+}*/
+.nrw_cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nrw_card_lay{
+    width: 100%;
+}
+.section_slogan{
+    font-size: 10px;
+}
+.nrw_img_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 0%;
+    margin-top: 25px;
+}
+.nrw_points{
+    display: block;
+    gap: 50px;
+    margin: 0% auto;
+}
+.section_lay{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: ;
+}
+.after::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F5B400;
+    left: 106px;
+    top: -16%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    display: none;
+}
+.after::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F5B400;
+    left: 106px;
+    bottom: -16%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    display: none;
+}
+.points{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#head_nrw{
+    text-align: center;
+}
+#nrw_way{
+    padding: 0px 20px;
+    display: none;
+}
+.nrw_lay{
+    padding-left: 20px;
+}
+}
+@media(min-width: 600px) and (max-width:768px){
+    .section,.why_we_lay,.districts_lay,.reques{
+        padding: 0px 20px;
+    }
+    #location_icon,#arrow_service,.big-Icons,.HeroCardIconWrapper,.Hero_img,.mainNav{
+        display: none;
+    }.Hero{
+    background-image:url("umgebung.webp");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 50px;
+    position: relative;
+    }
+    
+    #menu-btn {
+        display: block;
+    }
+    #mobile-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0B2345;
+    }
+    
+.nrwlay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_grid{
+    padding-left:20px ;
+    padding-right:20px ;
+}
+.nrw_card_lay{
+    width: 100%;
+}
+.nrw_img_box{
+    margin: 0% auto;
+    margin-top: 25px;
+}
+.nrw_points{
+    display: block;
+    gap: 50px;
+    margin: 0% auto;
+}
+.section_lay{
+    width: 100%;
+    max-width: fit-content;
+}
+.after::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F5B400;
+    left: 106px;
+    top: -16%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    display: none;
+}
+.after::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #F5B400;
+    left: 106px;
+    bottom: -16%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    display: none;
+}
+.points{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#head_nrw{
+    text-align: center;
+}
+#nrw_way{
+    padding: 0px 50px;
+}
+.section_lay{
+    display: block;
+    margin: 0% auto;
+}
+#head_nrw{
+    text-align: center;
+    margin-bottom:25px ;
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+     nav {
+    padding: 7px 10px;
+}
+nav a {
+    margin-right: 29px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+#nav_kont{
+    font-size: 14px;
+}
+.phoneIcon{
+ display: none;   
+}
+#all_services{
+    font-size: 12px;
+}
+.nrw_points{
+    justify-content: space-between;
+    width: 100%;
+}
+.nrwlay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left_grid{
+    padding-left:20px ;
+    padding-right:20px ;
+}
+.nrw_card_lay{
+    width: 100%;
+}
+.nrw_img_box{
+    margin: 0% auto;
+    margin-top: 25px;
+}
+.nrw_img_box{
+    width: 47%;
+}
+}
+</style>
+</head>
+<body>
+     <header>
+        
+            <button id="menu-btn">
+                   ☰
+               </button>
+               <nav id="mobile-menu">
+                   <a href="index.html#leistungen">Leistungen</a>
+                   <a href="index.html#WarumWir">Warum wir</a>
+                   <a href="index.html#überUns">Über Uns</a>
+                   <a href="index.html#Ablauf">Ablauf</a>
+                   <a href="index.html#vorherNAchher">vorher-nachher</a>
+                   <a href="index.html#fragen">Fragen</a>
+                   <a href="index.html#Kontakt">Kontakt</a>
+               </nav>
+
+            <script>
+                const button = document.getElementById("menu-btn");
+                const menu = document.getElementById("mobile-menu");
+
+                button.addEventListener("click", () => {
+
+                    if(menu.style.display === "block"){
+
+                        menu.style.display = "none";
+
+                        button.style.borderBottomLeftRadius = "12px";
+                        button.style.borderBottomRightRadius = "12px";
+
+                    }else{
+
+                        menu.style.display = "block";
+
+                        button.style.borderBottomLeftRadius = "0px";
+                        button.style.borderBottomRightRadius = "0px";
+
+                        menu.style.borderTopLeftRadius = "0px";
+                        menu.style.borderTopRightRadius = "0px";
+
+                    }
+
+                });
+            </script>
+        <nav class="mainNav">
+            <img src="navImg.webp" alt="nav Img" class="nav_img">
+            <div>
+                <a href="">Leistungen</a>
+                <a href="">Warum wir</a>
+                <a href="">Über uns</a>
+                <a href="">Ablauf</a>
+                <a href="">Vorher-Nachher</a>
+                <a href="">Fragen</a>
+            </div>
+            <div>
+                <a href="" class="yellowBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btnIcon phoneIcon">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    Kontakt
+                </a>
+            </div>
+        </nav>
+        <div class="Hero">
+            <div class="hero_img_box">
+                <img src="entrumplertruck.webp" alt="Herne Wahrzeichen" class="Hero_img">
+                <div class="Hero_content">
+                    <div>
+                        <h1 id="hero-h1">Entrümpelung in<br><strong class="markd">der Umgebung</strong></h1>
+                    </div>
+                    <div>
+                        <p class="big_txt">Schnell, zuverlässig und zum fairen Festpreis.<br>
+                        Entrümpelungen und Haushaltsauflösungen in der<br>
+                        gesamten Umgebung – unkompliziert und fachgerecht.</p>
+                    </div>
+                    <div class="hero_service">
+                        <div class="hero_serv_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                            <strong class="Lesitung_">Schnell<br>vor Ort</strong>
+                        </div>
+                        <div class="hero_serv_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                            </svg>
+                            <strong class="Lesitung_">Zuverlässig<br>& diskret</strong>
+                        </div>
+                        <div class="hero_serv_card">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <strong class="Lesitung_">Faire<br>Festpreise</strong>
+                        </div>
+                    </div>
+                    <div class="btns_hero">
+                        <a href="index.html#Kontakt" class="yellowBtn">
+                            Kostenlose Besichtigung anfragen <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                        <a href="index.html#leistungen" class="whiteBtn yellowBtn" target="_blank">
+                            Alle Leistungen ansehen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <main>
+        <div class="nrwlay section" id="nrw">
+            <div class="left_grid">
+                <div>
+                    <p class="section_slogan">UNSER EINSATZGEBIET</p>
+                    <h2 class="main_h">Entrümpelung in<br><strong class="markd">ganz NRW</strong></h2>
+                    <p class="section_slogan big_txt">Ob Großstadt, odr Kleinstadt oder kleines Dorf - wir sind<br>in ganz Nordrhein-Westfalen für Sie im Einsatz.</p>
+                </div>
+                <div class="nrw_cards">
+                    <div class="nrw_card_lay">
+                        <div class="nrw_icon_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="big_txt">NRW-weit im Einsatz</strong>
+                            <p>Von der Stadt aufs<br>Land.</p>
+                        </div>
+                    </div>
+                    <div class="nrw_card_lay">
+                        <div class="nrw_icon_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="big_txt">Auch in kleineren Orten</strong>
+                            <p>Wir kommen überall hin-<br>auch in ländlichen Gebieten.</p>
+                        </div>
+                    </div>
+                    <div class="nrw_card_lay">
+                        <div class="nrw_icon_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="big_txt">Schnelle Termine</strong>
+                            <p>Kurzfristige Besichtigungen<br>möglich.</p>
+                        </div>
+                    </div>
+                    <div class="nrw_card_lay">
+                        <div class="nrw_icon_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong class="big_txt">Zuverlässige Festpreise</strong>
+                            <p>Faire und transparente Preise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="yellowBtn nrwBtn">Einsatzgebiete Entdecken</a>
+                </div>
+            </div>
+            <div class="nrw_img_box">
+                <img src="nrw.webp" alt="NRW Karte" class="nrw_img">
+            </div>
+        </div>
+        <div class="section" id="nrw_way">
+            <div class="section_lay">
+                <div id="head_nrw">
+                    <p class="section_slogan">NRW-WEIT FÜR SIE DA</p>
+                    <h2 class="section_h">Wir sind in<br><strong class="markd">ganz NRW</strong><br>für Sie verfügbar!</h2>
+                </div>
+                <div class="nrw_points ">
+                    <div class="points after">
+                        <div class="nrw_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_section_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>überall in NRW</strong>
+                        </div>
+                        <div>
+                            <p class="big_txt">Egal ob Großstadt, Kleinstadt<br>oder kleines Dorf - wir kommen<br>zu Ihnen.</p>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="nrw_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_section_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Schnell & Flexibel</strong>
+                        </div>
+                        <div>
+                            <p class="big_txt">Kurze Anfahrtswege und<br>zeitnahe Termine möglich.</p>
+                        </div>
+                    </div>
+                    <div class="points after">
+                        <div class="nrw_wrp">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nrw_section_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Unverbindlich anfragen</strong>
+                        </div>
+                        <div>
+                            <p class="big_txt">Schreinben Sie uns gerne -<br>wir beraten Sie kostenlos<br>und persönlich.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="index.html#Kontakt" class="nrw_btn yellowBtn" target="_blank">Jetzt unverbindlich anfragen <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="footer_layout">
+            <div>
+                <div>
+                    <h4>Entrümpelung Bochum</h4>
+                </div>
+                <div>
+                    <p>Ihr Partner für Entrümpelungen,<br>Haushaltsauflösungen und<br>Wohnungsauflösungen.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Leistungen</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li>Wohnungsauflösung</li>
+                        <li>Haushaltsauflösung</li>
+                        <li>Betriebsauflösung</li>
+                        <li>Kellerentrümpelung</li>
+                        <li>Dachbodenentrümpelung</li>
+                        <li>Nachlassauflösung</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Unternehmen</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="index.html#überUns">ÜberUns</a>
+                    <a href="index.html#Ablauf">Ablauf</a>
+                    <a href="index.html#fragen">FAQ</a>
+                    <a href="index.html#Kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Einsatzgebiet</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="bochum.html" target="_blank">Bochum</a>
+                    <a href="herne.html" target="_blank">Herne</a>
+                    <a href="witten.html" target="_blank">Witten</a>
+                    <a href="dortmund.html" target="_blank">Dortmund</a>
+                    <a href="hattingen.html" target="_blank">Hattingen</a>
+                    <a href="umgebung.html" targ="_blank">und Umgebung</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Rechtliches</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="impressum.html" target="_blank">Impressum</a>
+                    <a href="datenschutz.html" target="_blank">Datenschutz</a>
+                    <img src="miraiweis.png" alt="mirai logo" id="mirai">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Die Entrümpler-Profis Bochum - Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="overlay">
+            <div class="mirai-Lay display">
+                <div class="cardHead">
+                    <img src="mirai.png" alt="mirai logo" class="miraiTwo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons closeIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="miraiP">Mirai ist eine Softwareentwicklungsfirma für moderne Webseiten und Onlineshops. Wir entwickeln<br>individuelle digitale Lösungen, die Unternehmen dabei helfen, online sichtbar zu werden, Kunden zu<br>gewinnen und nachhaltig zu wachsen. Dabei verbinden wir ansprechendes Design mit leistungsstarker<br>Technologie.</p>
+                </div>
+                <div class="miraiCard-Layout">
+                    <div class="mirai-mobile">
+                         <div>
+                            <h2>Über Mirai</h2>
+                            <p>Wir sind eine Softwareentwicklungsfirma<br>aus Deutschland. Wir entwickeln moderne<br> Webseiten, Onlineshops und digitale<br>Lösungen, die begeistern.</p>
+                        </div>
+                        <div>
+                            <h2>bei fragen</h2>
+                            <p>Telefon: 0171 6105872</p>
+                            <p>E-Mail: mirai-digital@gmail.com</p>
+                            <p>Webseite: <strong>Bald verfügbar</strong></p>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Leistungen</h3>
+                            <p>Webdesign, Entwicklung,<br>SEO, Branding &<br>Wartung</p>
+                        </div>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Kontakt</h3>
+                            <p>mirai-digital@gmail.com</p>
+                            <p>0171 6105872</p>
+                        </div>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Webseite</h3>
+                            <strong>Bald verfügber</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

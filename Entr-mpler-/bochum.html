@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrümpler Profis | in Bochum</title>
+    <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="webLogo.png" type="image/png">
+    <meta name="description"
+    content="Die Entrümpler Profis – Ihr Experte für Wohnungsauflösungen, Haushaltsauflösungen und Entrümpelungen aller Art. Schnell, zuverlässig, besenrein und zum fairen Festpreis. Kostenlose Besichtigung anfragen.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth    ;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+img{
+    width:100%;
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 100px;
+}
+.nav_img{
+    width: 100%;
+    max-width: 10%;
+    height: auto;
+}
+nav a{
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+h1, nav a, h2 {
+    color: #081A2E;
+}
+.yellowBtn {
+    text-decoration: none;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #F5B400;
+    padding: 15px 20px;
+    color: #081A2E;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.phoneIcon {
+    fill: #081A2E;
+}
+.btnIcon {
+    width: 30px;
+    height: 30px;
+}
+.Hero_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.65) 30%,
+        rgba(0, 0, 0, 0.25) 60%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+.hero_img_box{
+    width: 100%;
+    height: 600px;
+    overflow: hidden; 
+    position: relative;  
+}
+.Hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.Hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.75) 10%,
+        rgba(0, 0, 0, 0.40) 40%,
+        rgba(0, 0, 0, 0.10) 80%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    z-index: 1;
+}
+#hero-h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    color: #fff;
+}
+.Hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    z-index: 2;
+}
+.Hero_content p{
+    color: #fff;
+}
+.Yellow_icons{
+    stroke: #F5B400;
+}
+.Hero_icons{
+    width: 45px;
+    height: 45px;
+}
+.hero_service{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.hero_serv_card{
+    display: flex;
+    gap: 15px;
+}
+p, strong,h1,h2{
+    margin: 0%;
+}
+.small_icon{
+    width: 25px;
+    height: 25px;
+}
+.main_h{
+    font-weight: 700;
+    font-size: 40px;
+}
+.section{    
+    padding: 0px 100px;
+    margin-top: 100px;
+}
+.section_slogan{
+    margin-top: 10px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #F5B400;
+    gap: 15px;
+    font-weight: 600;
+}
+.section_head{
+    display: flex;
+    justify-content: space-between;
+}
+.big-Icons {
+    width: 50px;
+    height: 50px;
+}
+.HeroCardIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDEDB4;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.markd {
+    color: #F5B400;
+}
+.Lesitung_{
+    color: #fff;
+}
+.service_card{
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+    border: #FDEDB4 2px solid;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: all 0.3s ease;
+    flex-wrap:wrap ;
+    min-height: 240px;
+    height: auto;
+    box-sizing: border-box;
+}
+.service_card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .04);
+}
+.service_expl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.service_lay{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: left;
+    gap: 20px;
+    margin:50px 0px;
+    align-items: stretch;
+}
+.grid_img{
+    max-width: 550px;
+    width: 100%;
+    border-radius: 8px;
+}
+.why_we{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.why_we_lay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 0px 100px;
+    margin-top: 100px;
+}
+.why_we_point{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.point_lay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.check{
+    fill:#F5B400 ;
+}
+.yellow_box{
+    background-color: rgb(245, 180, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.districts{
+    background: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+}
+.city_center{
+    max-width: 570px;
+    border-radius: 12px;
+    width: 100%;
+}
+.districts_lay{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    margin-top: 100px;
+}
+.all_districts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 730px;
+}
+.head_lay{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.reques{
+    background-color: #F5B400;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:35px 100px;
+    margin-top: 100px;
+}
+.requestBtn{
+    background-color: rgb(255, 255, 0) ;
+}
+footer{
+    background-color:#0F1A26;
+}
+.footer_layout{
+    /*width: fit-content;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    padding:50px;
+    /*border-radius: 20px;*/
+}
+.footer_layout p,.footer_layout li,.footer_layout a,.copyright p{
+    color:#D6DCE5;
+    font-weight: 400;
+    line-height: 40px;
+}
+.footer_layout h4{
+    color:#F5F7FA;
+    font-size:15px;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.footer_links a{
+    text-decoration:none;
+}
+.copyright{
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.copyright::after{
+    content: "";
+    position: absolute;
+    background:#343F4B;
+    width:97%;
+    height: 1px;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mirai{
+    width:92px;
+    margin-top: 10px;
+}
+#mirai:hover,.closeIcon:hover{
+    cursor: pointer;
+}
+.mirai-Lay{
+    /*
+    z-index: 2;
+    background-color:#fff; 
+    position: fixed;
+    padding: 50px;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    border-radius: 20px;*/
+    width: 900px;
+    max-width: 90%;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 50px;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.25);
+
+    position: relative;
+}
+.mirai-Lay p{
+    color: #081A2E;
+    line-height: 22px;
+    font-weight: 600;
+}
+.miraiTwo{
+    width:300px;
+}
+.display,.mirai-mobile{
+    display: none;
+}
+.mirai-Card{
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    width: 100%;
+    max-width: 230px;
+    padding:20px;
+    border-radius: 10px;
+}
+.medium-Icons{
+    width: 40px;
+    height: 40px;
+}
+.miraiCard-Layout{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999; 
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.cardHead{
+    display: flex;
+    justify-content: space-between;
+}
+nav a:hover{
+    transform:translateY(-3px);
+}
+footer a{
+    transition: all 0.3s ease;
+}
+footer a:hover{
+    transform: translateX(-3px);
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+ul {
+    padding: 0%;
+}
+#menu-btn{
+    display: none;
+    width:50px;
+    height:50px;
+    border:none;
+    border-top-left-radius:12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background:#F4B400;
+    font-size:22px;
+    cursor:pointer;
+    position: absolute;
+    left: 20px;
+    top:20px;
+    z-index: 98;
+    margin-bottom: 20px;
+}
+#mobile-menu{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:20px;
+    width:250px;
+    background:white;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    z-index: 99;
+    padding: 0%;
+}
+.whiteBtn{
+    background-color: #081A2E;
+    color: #fff;
+}
+@media(max-width: 600px){
+    .Hero_content{
+        left: 0%;
+        padding: 0px 15px;
+    }
+    .section,.why_we_lay,.districts_lay,.reques{
+        padding: 0px 20px;
+    }
+    #location_icon,#arrow_service,.big-Icons,.HeroCardIconWrapper,.Hero_img,.mainNav{
+        display: none;
+    }
+    .yellow_box{
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+    .city_center{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+    .service_lay{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .link{
+        font-size: 12px;
+    }
+    .why_we_lay{
+        gap: 30px;
+    }
+    .big_txt{
+        font-size: 14px;
+    }
+    .reques{
+        gap: 30px;
+        padding: 20px 20px;
+    }
+    .request_lay{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Hero{
+    background-image:url("bochumhandy.webp");
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 50px;
+    position: relative;
+    }
+    #menu-btn {
+        display: block;
+    }
+    #mobile-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0B2345;
+    }
+    .Hero_icons {
+    width: 30px;
+    height: 30px;
+}
+.Lesitung_{
+    font-size: 14px;
+}
+.service_expl p{
+    font-size: 13px;
+}
+.hero_service {
+    gap: 40px;
+    display: none;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+#hero-h1,.hero_txt{
+    text-align: center;
+}
+.service_card{
+        width: 100%;
+        min-height: 0%;
+    }
+.yellowBtn {
+    font-size: 13px;
+}
+}
+@media(min-width: 600px) and (max-width:768px){
+    .section,.why_we_lay,.districts_lay,.reques{
+        padding: 0px 20px;
+    }
+    #location_icon,#arrow_service,.big-Icons,.HeroCardIconWrapper,.Hero_img,.mainNav,.city_center{
+        display: none;
+    }
+    .service_card{
+        width: 100%;
+        min-height: 0%;
+    }
+       .why_we_lay{
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .big_txt{
+        font-size: 12px;
+    }
+    .reques{
+        gap: 30px;
+        padding: 20px 20px;
+    }
+    .request_lay{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Hero{
+    background-image:url("bochumhandy.webp");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 50px;
+    position: relative;
+    }
+    #menu-btn {
+        display: block;
+    }
+    #mobile-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #0B2345;
+    }
+    .Hero_icons {
+    width: 30px;
+    height: 30px;
+}
+.Hero_content{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.Lesitung_{
+    font-size: 14px;
+}
+.service_expl p{
+    font-size: 13px;
+}
+.hero_service {
+    gap: 40px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.Hero_content{
+    margin: 0% 100px;
+    text-align: center;
+}
+
+    .service_lay{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.grid_img{
+    display: none;
+}
+#why_we_headline{
+    font-size: 30px;
+}
+.check {
+    width: 18px;
+    height: 18px;
+}
+.check_p{
+    font-size: 12px;
+}
+#bochum_headline{
+    font-size: 37px;
+}
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    nav {
+    padding: 7px 10px;
+}
+nav a {
+    margin-right: 29px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+#nav_kont{
+    font-size: 14px;
+}
+.phoneIcon,#arrow_service,.grid_img,.city_center  {
+ display: none;   
+}
+#all_services{
+    font-size: 12px;
+}
+}
+/*@media (min-width: 1281px) {
+    nav {
+    padding: 7px 30px;
+}
+nav a {
+    margin-right: 29px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+#nav_kont{
+    font-size: 14px;
+}
+.point_lay,.city_center{
+    display: none;
+}
+.districts_lay{
+    display: block;
+}
+}*/
+    </style>
+</head>
+<body>
+    <header>
+            <button id="menu-btn">
+                   ☰
+               </button>
+               <nav id="mobile-menu">
+                   <a href="index.html#leistungen">Leistungen</a>
+                   <a href="index.html#WarumWir">Warum wir</a>
+                   <a href="index.html#überUns">Über Uns</a>
+                   <a href="index.html#Ablauf">Ablauf</a>
+                   <a href="index.html#vorherNAchher">vorher-nachher</a>
+                   <a href="index.html#fragen">Fragen</a>
+                   <a href="index.html#Kontakt">Kontakt</a>
+               </nav>
+
+            <script>
+                const button = document.getElementById("menu-btn");
+                const menu = document.getElementById("mobile-menu");
+
+                button.addEventListener("click", () => {
+
+                    if(menu.style.display === "block"){
+
+                        menu.style.display = "none";
+
+                        button.style.borderBottomLeftRadius = "12px";
+                        button.style.borderBottomRightRadius = "12px";
+
+                    }else{
+
+                        menu.style.display = "block";
+
+                        button.style.borderBottomLeftRadius = "0px";
+                        button.style.borderBottomRightRadius = "0px";
+
+                        menu.style.borderTopLeftRadius = "0px";
+                        menu.style.borderTopRightRadius = "0px";
+
+                    }
+
+                });
+            </script>
+        <nav class="mainNav">
+            <img src="navImg.webp" alt="nav Img" class="nav_img">
+            <div>
+                <a href="">Leistungen</a>
+                <a href="">Warum wir</a>
+                <a href="">Über uns</a>
+                <a href="">Ablauf</a>
+                <a href="">Vorher-Nachher</a>
+                <a href="">Fragen</a>
+            </div>
+            <div>
+                <a href="" class="yellowBtn" id="nav_kont">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="btnIcon phoneIcon">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                    </svg>
+                    Kontakt
+                </a>
+            </div>
+        </nav>
+        <div class="Hero">
+            <div class="hero_img_box">
+                <img src="bochum.webp" alt="Bochum Wahrzeichen" class="Hero_img">
+                <div class="Hero_content">
+                    <div>
+                        <h1 id="hero-h1">Entrümpelung in<br><strong class="markd">Bochum</strong></h1>
+                    </div>
+                    <div>
+                        <p class="big_txt hero_txt">Ihr zuverlässiger Partner für Wohnungsauflösungen,<br>Haushaltsauflösungen und Entrümpelungen in Bochum<br>und Umgebung.</p>
+                    </div>
+                    <div class="hero_service">
+                        <div class="hero_serv_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                            <strong class="Lesitung_">Schnell<br>vor Ort</strong>
+                        </div>
+                        <div class="hero_serv_card">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                            </svg>
+                            <strong class="Lesitung_">Zuverlässig<br>& diskret</strong>
+                        </div>
+                        <div class="hero_serv_card">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Yellow_icons Hero_icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <strong class="Lesitung_">Faire<br>Festpreise</strong>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <a href="index.html#Kontakt" class="yellowBtn" target="_blank">
+                            Kostenlose Besichtigung anfragen <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                        <a href="index.html#leistungen" class="yellowBtn whiteBtn" target="_blank">
+                            Alle Leistungen ansehen<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <main>
+        <div class="section">
+            <div class="section_head">
+                <div>
+                    <h2 class="main_h">Unsere Leistungen in <strong class="markd">Bochum</strong></h2>
+                    <p class="section_slogan big_txt">Zuverlässig, professionell und regional - wir bieten Ihnen ein umfassendes<br>Leistungsspektum rund um Entrümpelung, Entsorgung und Reinigung in Bochum.</p>
+                </div>
+                <div>
+                    <a href="index.html#leistungen" target="_blank" class="link" id="all_services">Alle Leistungen ansehen<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon" id="arrow_service">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="service_lay">
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Wohnungsentrümpelung</strong>
+                        <p>Komplette Räumung und besenreine<br>Übergabe von Wohnungen in Bochum.</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Haushalts- und<br>Nachlassauflösungen</strong>
+                        <p>Zuverlässige Auflösung von Haushalten<br>und Nachlässen - diskret und professionell.</p>
+                    </div>
+                </div>
+                 <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Keller-, Dachboden- und<br>Garagenräumungen</strong>
+                        <p>Schnelle unjd fachgerechte Räumung von<br>Kellern, Dachböden und Garagen.</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Firmen- und<br>Büroauflösungen</strong>
+                        <p>Effiziente Auflösung von Büros,<br>Gewerbeobjekten und Firmenstandorten.</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Messie-Wohnungen</strong>
+                        <p>Einfühlsame und diskrete Entrümpelung<br>von stark vermüllten Wohnungen.</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Fachgerechte Entsorgung </strong>
+                        <p>Umweltgerechte Entsorgung und<br>Spermüllentsorgung aller Materialien.</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Gebäudereinigung<br>und Grundreinigung</strong>
+                        <p>Professoinelle Reinigung von Gebäuden,<br>Treppenhäusern und Gewerbefläche.</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                    <div class="HeroCardIconWrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="big-Icons">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                        </svg>
+                    </div>
+                    <div class="service_expl">
+                        <strong>Tatorteinigung</strong>
+                        <p>Fachgerechte und diskrete Reinigung<br>nach besonderen Ereignissen.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="index.html#Kontakt" class="yellowBtn">Kostenlose Besichtigung anfragen <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="small_icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+                </a>
+            </div>
+        </div>
+        <div class="why_we_lay">
+            <div>
+                <img src="planetarium.webp" alt="planetarium" class="grid_img">
+            </div>
+            <div class="why_we">
+                <div>
+                    <p class="markd">Die Entrümpler-Profis in Bochum</p>
+                    <h2 class="main_h" id="why_we_headline">Warum wir<strong class="markd"> in Bochum</strong><br>die richtige Wahl sind</h2>
+                </div>
+                <div>
+                    <p class="big_txt">Wir kennen Bochum und die Umgebung genau. Ob Innenstadt,<br>Wattenscheid, Langendreer oder Linden - unser Teamist schnell<br>vor Ort und sorgt für eine reibungslose Abwicklung. Mit unserer<br>Erfahrung, Zuverlässigkeit und fairen Preisen sind wir Ihr<br>regionaler Ansprechpartneer für Entrümpelungen in Bochum.</p>
+                </div>
+            </div>
+            <div class="point_lay">
+                <div class="why_we_point">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="very_small_icon small_icon check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p class="check_p">Lokales Team aus der Region</p>
+                </div>
+                <div class="why_we_point">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="very_small_icon small_icon check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p class="check_p">Schnelle Termine</p>
+                </div>
+                <div class="why_we_point">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="very_small_icon small_icon check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p class="check_p">Diskrete Abwicklung</p>
+                </div>
+                <div class="why_we_point">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="very_small_icon small_icon check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p class="check_p">Faire und transparente Preise</p>
+                </div>
+                <div class="why_we_point">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="very_small_icon small_icon check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <p class="check_p">Zufriedene Kunden in Bochum</p>
+                </div>
+            </div>
+        </div>
+        <div class="districts_lay">
+            <div class="yellow_box">
+                <div class="head_lay">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="Hero_icons" id="location_icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <h2 class="main_h" id="bochum_headline">Wir sind in ganz Bochum für Sie da</h2>
+                </div>
+                <div>
+                    <p>Egal ob in der Innenstadt oder in den Stadtteilen - wir bieten unsere Entrümpelungs- und Auflösungsservices in ganz Bochum an.</p>
+                </div>
+                <div class="all_districts">
+                    <p class="districts">Bochum Mitte</p>
+                    <p class="districts">Wattenscheid</p>
+                    <p class="districts">Langendreer</p>
+                    <p class="districts">Linden</p>
+                    <p class="districts">Weitmar</p>
+                    <p class="districts">Querenburg</p>
+                    <p class="districts">Höntrop</p>
+                    <p class="districts">Gerthe</p>
+                    <p class="districts">Harpen</p>
+                    <p class="districts">Stiepel</p>
+                    <p class="districts">Riemke</p>
+                    <p class="districts">und weitere...</p>
+                </div>
+            </div>
+            <div>
+                <img src="bochuminnenstadt.webp" alt="Startue in der Bochumer Innenstadt" class="city_center">
+            </div>
+        </div>
+        <div class="reques">
+            <div id="request_lay">
+                <h2>Jetzt kostenlose Besichtigung in Bochum anfragen</h2>
+                <p class="big_txt">Lassen Sie uns unverbindlich beraten - schnell, einfach und kostenlos.</p>
+            </div>
+            <div>
+                <a href="index.html#Kontakt" target="_blank" class="yellowBtn requestBtn">Jetzt anfragen</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="footer_layout">
+            <div>
+                <div>
+                    <h4>Entrümpelung Bochum</h4>
+                </div>
+                <div>
+                    <p>Ihr Partner für Entrümpelungen,<br>Haushaltsauflösungen und<br>Wohnungsauflösungen.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Leistungen</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li>Wohnungsauflösung</li>
+                        <li>Haushaltsauflösung</li>
+                        <li>Betriebsauflösung</li>
+                        <li>Kellerentrümpelung</li>
+                        <li>Dachbodenentrümpelung</li>
+                        <li>Nachlassauflösung</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Unternehmen</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="index.html#überUns">ÜberUns</a>
+                    <a href="index.html#Ablauf">Ablauf</a>
+                    <a href="index.html#fragen">FAQ</a>
+                    <a href="index.html#Kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Einsatzgebiet</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="bochum.html" target="_blank">Bochum</a>
+                    <a href="herne.html" target="_blank">Herne</a>
+                    <a href="witten.html" target="_blank">Witten</a>
+                    <a href="dortmund.html" target="_blank">Dortmund</a>
+                    <a href="hattingen.html" target="_blank">Hattingen</a>
+                    <a href="umgebung.html" targ="_blank">und Umgebung</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>Rechtliches</h4>
+                </div>
+                <div class="footer_links">
+                    <a href="impressum.html" target="_blank">Impressum</a>
+                    <a href="datenschutz.html" target="_blank">Datenschutz</a>
+                    <img src="miraiweis.png" alt="mirai logo" id="mirai">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Die Entrümpler-Profis Bochum - Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="overlay">
+            <div class="mirai-Lay display">
+                <div class="cardHead">
+                    <img src="mirai.png" alt="mirai logo" class="miraiTwo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons closeIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="miraiP">Mirai ist eine Softwareentwicklungsfirma für moderne Webseiten und Onlineshops. Wir entwickeln<br>individuelle digitale Lösungen, die Unternehmen dabei helfen, online sichtbar zu werden, Kunden zu<br>gewinnen und nachhaltig zu wachsen. Dabei verbinden wir ansprechendes Design mit leistungsstarker<br>Technologie.</p>
+                </div>
+                <div class="miraiCard-Layout">
+                    <div class="mirai-mobile">
+                         <div>
+                            <h2>Über Mirai</h2>
+                            <p>Wir sind eine Softwareentwicklungsfirma<br>aus Deutschland. Wir entwickeln moderne<br> Webseiten, Onlineshops und digitale<br>Lösungen, die begeistern.</p>
+                        </div>
+                        <div>
+                            <h2>bei fragen</h2>
+                            <p>Telefon: 0171 6105872</p>
+                            <p>E-Mail: mirai-digital@gmail.com</p>
+                            <p>Webseite: <strong>Bald verfügbar</strong></p>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Leistungen</h3>
+                            <p>Webdesign, Entwicklung,<br>SEO, Branding &<br>Wartung</p>
+                        </div>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Kontakt</h3>
+                            <p>mirai-digital@gmail.com</p>
+                            <p>0171 6105872</p>
+                        </div>
+                    </div>
+                    <div class="mirai-Card">
+                        <div class="faq_Wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="medium-Icons">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Webseite</h3>
+                            <strong>Bald verfügber</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
